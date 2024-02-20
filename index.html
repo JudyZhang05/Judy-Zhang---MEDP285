@@ -3,19 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <title>Judy Zhang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style>
+    *{
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+    }
+    body{
+      color: #c4bbaf;
+      margin: 0;
+    }
+    ul, a{
+      all: unset;
+    }
+    li{
+      padding: 1%;
+      border: solid 2px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .active{
+      transition: .3s ease-in-out;
+    }
+    .active:hover{
+      background-color: #c4bbaf;
+      color: #5c4742;
+    }
+    h1{
+      color: #5c4742;
+      background-color: #c4bbaf;
+      padding: 2%;
+      margin-bottom: 5%;
+      margin-top: 5%;
+      transition: .5s ease-in-out;
+      border-top: solid 1px;
+      border-bottom: solid 1px;
+      user-select: none;
+    }
+    h1:hover{
+      background-color: #5c4742;
+      color: #c4bbaf;
+    }
+    p{
+      padding: 5%;
+    }
+    footer{
+      position: absolute;
+      bottom:0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
 </head>
-<body>
+<body style="background-color: #5c4742;">
   <h1>Introduction to Web Design</h1>
-  <p>Hello, I'm Judy Zhang. I am a sophomore attending Hunter College, majoring in Emerging Media and minoring in Computer Science. I am very passionate about front-end development and UI/UX design.</p>
   <ul>
-    <li><a href="me\index.html">HTML</a></li>
-    <li>CSS</li>
-    <li>Raster Graphics</li>
-    <li>Vector Graphics</li>
-    <li>Website Layout</li>
-    <li>Responsive Design</li>
-    <li>JavaScript</li>
-    <li>Final Project</li>
+    <li class="active"><a href="me\index.html">HTML</a></li>
+    <li class="active"><a href="me_css/index.html">CSS</a></li>
+    <li title="not avaliable">Raster Graphics</li>
+    <li title="not avaliable">Vector Graphics</li>
+    <li title="not avaliable">Website Layout</li>
+    <li title="not avaliable">Responsive Design</li>
+    <li title="not avaliable">JavaScript</li>
+    <li title="not avaliable">Final Project</li>
   </ul>
+  <p style="color:#a5978b;">Hello, I'm Judy Zhang. I am a sophomore attending Hunter College, majoring in Emerging Media and minoring in Computer Science. I am very passionate about front-end development and UI/UX design.</p>
 </body>
+<footer><small>All Rights Reserved &copy; Judy Zhang</small></footer>
 </html>
