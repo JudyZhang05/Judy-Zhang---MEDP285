@@ -1,5 +1,5 @@
 # CUNY HUNTER COLLEGE - MEDP COURSE WEBSITE
-**Spring Term 2024 - MEDP 258 Web Production I**
+**Spring Term 2024 - MEDP 258 Web Production I**<br>
 Professor: Mark H. Ramos
 <br>
 Student Name: Judy Zhang
@@ -15,7 +15,7 @@ understanding of how they interrelate to produce creative content for web distri
 <br>
 
 ## Commits:
-* FEA: Major Development(s) Implemented
-* FX: Error has been resolved
-* C: Cleaned up code
-* S: Progress Commit
+* **HC**: Completion of homework and/or class exercise
+* **FX**: Error has been resolved
+* **C**: Cleaned up code
+* **S**: Progress Commit
