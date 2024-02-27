@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raster Graphics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Montserrat", sans-serif;
+            user-select: none;
+        }
+        body{
+            overflow: hidden;
+            background-image: url("Assets/background-j.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        header{
+            color: rgb(57, 78, 116);
+            text-align: center;
+        }
+        #viewer{
+            bottom: 0;
+            position: absolute;
+            right: 0;
+        }
+        #dragon{
+            position: absolute;
+            top: -10%;
+            left: 10%;
+            z-index: -1;
+        }
+        footer{
+            position: absolute;
+            bottom: 0;
+            left:50%;
+            color: white;
+            transform: translate(-50%,-50%)
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Dragon Viewing</h1></header>   
+    <main>
+        <img draggable="false" id="viewer" srcset="Assets/1440-j.png 1440w, Assets/960-j.png 960w, Assets/480-j.png 480w" src="Assets/480-j.png" width="90%" height="auto" alt="onlooker">
+        <img draggable="false" id="dragon" srcset="Assets/1440-d.png 1440w, Assets/960-d.png 960w, Assets/480-d.png 480w" src="Assets/480-d.png" width="700px" height="auto" alt="dragon">
+    </main> 
+    <footer><small>All Rights Reserved &copy; Judy Zhang</small></footer>
+</body>
+</html>
