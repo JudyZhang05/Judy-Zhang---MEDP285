@@ -8,39 +8,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1 class="heading">Meet Judy Zhang</h1>
-        <div class="wrap">
-            <img src="images/raoul-droog-yMSecCHsIBc-unsplash.jpg" id="catMe" alter="Judy's Persona" width="300" height="400">
-            <h3 id="description">Judy is a sophomore at Hunter College majoring in Emerging Media and minoring in Computer Science. She is an artist but her true passion lies in UI/UX design and front-end development.</h3>
+    <nav>
+        <img src="../Assests/coffeelogo.svg" width="40">
+        <div id="nav_left">
+            <a href="../index.html">Homepage</a>
+            <select name="Homework" onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">       <!-- Resource: https://stackoverflow.com/questions/7562095/redirect-on-select-option-in-select-box-->
+                <option value="" disabled selected hidden>Assignments &darr;</option>
+                <option value="../me/index.html">HTML</option>
+                <option value="../A4_MeCss/index.html">CSS</option>
+                <option value="../A5_RasterGraphics/index.html">Raster Graphics</option>
+                <option value="../A6_VectorGraphics/index.html">Vector Graphics</option>
+                <option value="https://www.figma.com/file/LA4v57EIlJcTeaXRIAcz1E/Judy-Zhang---MEDP285-Wireframe?type=design&node-id=1669-162202&mode=design&t=ibtBEajMfsxfuMhr-0">Website Layout</option>
+                <option value="">JavaScript</option>
+                <option value="">Final Project</option>
+            </select>
         </div>
-    </header>
-    <main>
-        <hr/>
-        <div class="links">
+    </nav>
+    <div class="description">
+        <div id="box"></div>
+        <h1 id="topic">Assignment 2 - CSS</h1>
+        <b>Description</b>
+        <p>Utilizing the previously built HTML code, found in the first assignment <a class="inline_link" href="../me/index.html"><i>(or click here)</i></a>, for this assignment, design the webpage intutively with an external style sheet.</p>
+    </div>
+    <div class="content">
+        <header>
+            <h1 class="heading">Meet Judy Zhang</h1>
+            <div class="wrap">
+                <img src="images/raoul-droog-yMSecCHsIBc-unsplash.jpg" id="catMe" alter="Judy's Persona" width="300" height="400">
+                <h3 id="who">Judy is a sophomore at Hunter College majoring in Emerging Media and minoring in Computer Science. She is an artist but her true passion lies in UI/UX design and front-end development.</h3>
+            </div>
+        </header>
+        <main>
+            <hr/>
+            <div class="links">
+                <ul>
+                    <b>View More<br/></b>
+                    <a href="interests.html">More Interests</a>
+                    <a href="hobbies.html">More Hobbies</a>
+                    <a href="https://www.linkedin.com/in/judy-zhang-/">Connect with Judy</a>
+                </ul>
+            </div>
+            <hr/>
+            <p id="moreDetails">She loves cats as much as she loves to read, ask anyone she knows her most quoted phrase is <q>In my next life, I hope to become a famous instagram cat.</q> 
+            Although her parents forbid her to own anything other than fake plants, others fear that this would only cause her to spiral more into becoming a <q>crazy cat lady</q> in the future.       
+            Her close friends and relatives have since hidden away any beloved pets in fear that they might someday encounter the Judy's invincible secret weapon, catnip. 
+            On her free time when she is not searching for stray cats to feed, she reads books. <q>What does she read?</q> Yes. 
+            </p>
+            <h3>New Year 2024 Resolution</h3>
             <ul>
-                <b>View More<br/></b>
-                <a href="interests.html">More Interests</a>
-                <a href="hobbies.html">More Hobbies</a>
-                <a href="https://www.linkedin.com/in/judy-zhang-/">Connect with Judy</a>
+                <li><s>Buy more catnip</s></li>
+                <li>Save <s>money</s> cats</li>
+                <li><s>Actually read</s> Play with cats</li>
+                <li>Adopt <s>a</s> cats</li>
             </ul>
-        </div>
+        </main>
         <hr/>
-        <p id="moreDetails">She loves cats as much as she loves to read, ask anyone she knows her most quoted phrase is <q>In my next life, I hope to become a famous instagram cat.</q> 
-        Although her parents forbid her to own anything other than fake plants, others fear that this would only cause her to spiral more into becoming a <q>crazy cat lady</q> in the future.       
-        Her close friends and relatives have since hidden away any beloved pets in fear that they might someday encounter the Judy's invincible secret weapon, catnip. 
-        On her free time when she is not searching for stray cats to feed, she reads books. <q>What does she read?</q> Yes. 
-        </p>
-        <h3>New Year 2024 Resolution</h3>
-        <ul>
-            <li><s>Buy more catnip</s></li>
-            <li>Save <s>money</s> cats</li>
-            <li><s>Actually read</s> Play with cats</li>
-            <li>Adopt <s>a</s> cats</li>
-        </ul>
-    </main>
-    <hr/>
-    <footer><p>All Rights Reserved &copy; Judy Zhang</p></footer>
+        <footer><p>All Rights Reserved &copy; Judy Zhang</p></footer>
+    </div>
 </body>
 </html>

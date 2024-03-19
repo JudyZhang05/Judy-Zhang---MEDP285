@@ -11,72 +11,87 @@
       font-family: "Montserrat", sans-serif;
       text-align: center;
     }
-    body{
-      color: #c4bbaf;
-      margin: 0;
-    }
-    ul, a{
-      all: unset;
-    }
-    li{
-      padding: 1%;
-      border: solid 2px;
-      display: inline-block;
-      cursor: pointer;
-    }
-    .active{
-      transition: .3s ease-in-out;
-    }
-    .active:hover{
-      background-color: #c4bbaf;
-      color: #5c4742;
-    }
-    h1{
-      color: #5c4742;
-      background-color: #c4bbaf;
-      padding: 2%;
-      margin-bottom: 5%;
-      margin-top: 5%;
-      transition: .5s ease-in-out;
-      border-top: solid 2px;
-      border-bottom: solid 2px;
-      user-select: none;
-    }
-    h1:hover{
-      background-color: #5c4742;
-      color: #c4bbaf;
-    }
-    p{
-      padding: 5%;
-    }
-    #vector a h3{
-      cursor: pointer;
-      transition:  .3s ease-in-out;
-      border-top: solid 2px;
-      border-bottom: solid 2px;
-      padding: 1.5%;
-    }
-    #vector a h3:hover{
-      background-color: #c4bbaf;
-      color:#5c4742;
-    }
-    hr{
-      border: #c4bbaf solid 1px;
-    }
-    footer{
-      margin-bottom: .5%;
-    }
+    header{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #5c4742;
+    background-color: #c4bbaf;
+    transition: .5s ease-in-out;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    user-select: none;
+  }
+  header img{
+    margin-right: 1%;
+  }
+  .cup_color{
+    filter: invert(25%) sepia(5%) saturate(2549%) hue-rotate(324deg) brightness(97%) contrast(80%);
+    transition: .5s ease-in-out;
+  }
+  header:hover{
+    background-color: #5c4742;
+    color: #c4bbaf;
+  }
+  header:hover .cup_color{
+    filter: invert(83%) sepia(8%) saturate(407%) hue-rotate(355deg) brightness(94%) contrast(80%);
+  }
+  body{
+    color: #c4bbaf;
+    margin: 0;
+  }
+  ul, a{
+    all: unset;
+  }
+  li{
+    padding: 1%;
+    border: solid 2px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .active{
+    transition: .3s ease-in-out;
+  }
+  .active:hover{
+    background-color: #c4bbaf;
+    color: #5c4742;
+  }
+  p{
+    padding: 5%;
+  }
+  #vector a h3{
+    cursor: pointer;
+    transition:  .3s ease-in-out;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    padding: 1.5%;
+  }
+  #vector a h3:hover{
+    background-color: #c4bbaf;
+    color:#5c4742;
+  }
+  hr{
+    border: #c4bbaf solid 1px;
+  }
+  footer{
+    margin-bottom: .5%;
+  }
   </style>
 </head>
 <body style="background-color: #5c4742;">
-  <header><h1>Introduction to Web Design</h1></header>
+  <header>
+    <img src="./Assests/coffeelogo.svg" class="cup_color" width="40">
+    <h1>Introduction to Web Design</h1>
+  </header>
   <main>
     <ul>
       <li class="active"><a href="./me/index.html">HTML</a></li>
       <li class="active"><a href="A4_MeCss/index.html">CSS</a></li>
       <li class="active"><a href="A5_RasterGraphics/index.html">Raster Graphics</a></li>
       <li class="active"><a href="A6_VectorGraphics/vector_graphics.svg">Vector Graphics</a></li>
-      <li title="not avaliable">Website Layout</li>
+      <li class="active"><a href="https://www.figma.com/file/LA4v57EIlJcTeaXRIAcz1E/Judy-Zhang---MEDP285-Wireframe?type=design&node-id=1669-162202&mode=design&t=P2TLKCsVINotd9CO-0">Website Layout</a></li>
+      <!-- <li class="active"><a href="A7_Midterm/index.html">Midterm</a></li> -->
       <li title="not avaliable">Responsive Design</li>
       <li title="not avaliable">JavaScript</li>
       <li title="not avaliable">Final Project</li>

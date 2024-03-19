@@ -3,27 +3,113 @@
     font-family: "Dosis", sans-serif;
 }
 body{
-    background-color: #aea4bf;
-    color: #E3E4DB;
+    margin: 0;
+    background-color:#5c4742;
+}
+/* Navbar */
+nav{
+    font-size: 20px;
+    background-color: #c4bbaf;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: .5%;
+    padding-bottom: .5%;
+}
+nav img{
+    margin-left: 5%;
+    margin-top: .5%;
+    filter: invert(25%) sepia(5%) saturate(2549%) hue-rotate(324deg) brightness(97%) contrast(80%);
+}
+#nav_left{
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#nav_left a, #nav_left select{
+    all:unset;
+    color: #5c4742;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+    border: solid 2px;
+    padding: .5%;
+}
+#nav_left a:hover, #nav_left select:hover{
+    background-color: #5c4742;
+    border-color: #5c4742;
+    color: #c4bbaf;
+}
+#nav_left option{
+    border-radius: 0px;
+}
+/* Navbar */
+.description{
+    color: #c4bbaf;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:  repeat(5,20%);
+    grid-template-rows: 3fr 10% 10% 30% 1fr;
+}
+#box{
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    grid-area: 2/1/2/6;
+}
+#topic{
+    grid-area: 2/1/3/6;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    transition: .5s ease-in-out;
+}
+#topic:hover{
+    background-color: #c4bbaf;
+    color: #5c4742;
+}
+.description p, .description b{
+    grid-area: 4/2/4/5;
     font-size: 20px;
 }
-ul, a{
+svg{
+    grid-area: 5/3;
+}
+#down{
+    transform: rotate(45deg);
+}
+.inline_link{
+    all:unset;
+    cursor: pointer;
+}
+.inline_link:hover{
+    text-decoration: underline;
+}
+.content{
+    margin-top: 5%;
+    color: #E3E4DB;
+    font-size: 20px;
+    background-color: #aea4bf;
+}
+ul, .links a{
     all:unset;
 }
-a:link{
+.links a:link{
     display: inline-block;
     cursor: pointer;
     border: solid 2px;
     padding: .5%;
     margin: 1%;
 }
-a:hover{
+.links a:hover{
     text-decoration: underline;
 }
-a:active{
+.links a:active{
     text-decoration:line-through;
 }
-a:visited{
+.links a:visited{
     color:rgb(122, 119, 119);
 }
 header{
@@ -49,7 +135,10 @@ header{
 #catMe{
     float:inline-start;
 }
-#description{
+#who{
     color: #E3E4DB;  
     padding: 2%;
+}
+footer p{
+    margin: 0;
 }

@@ -1,0 +1,60 @@
+*{
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+}
+body{
+    grid-template:auto;
+    background-color: #aea4bf;
+    color: #E3E4DB;
+    font-size: 20px;
+}
+ul, a{
+    all:unset;
+}
+a:link{
+    display: inline-block;
+    cursor: pointer;
+    border: solid 2px;
+    padding: .5%;
+    margin: 1%;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:active{
+    text-decoration:line-through;
+}
+a:visited{
+    color:rgb(122, 119, 119);
+}
+header{
+    color:#aea4bf;
+}
+.heading{
+    background-color:#E3E4DB;
+    padding: 2%;
+    margin: 0;
+    margin-bottom: 1%;
+}
+.subhead{
+    background-color: #E3E4DB;
+    color: #aea4bf
+}
+.links{
+    padding: 1%;
+    color:#aea4bf;
+    background-color: #E3E4DB;
+}
+.wrap{
+    padding: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#catMe{
+    float:inline-start;
+}
+#description{
+    color: #E3E4DB;  
+    padding: 2%;
+}
