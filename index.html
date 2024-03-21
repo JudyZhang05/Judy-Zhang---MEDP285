@@ -3,81 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Judy Zhang</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <style>
-    *{
-      font-family: "Montserrat", sans-serif;
-      text-align: center;
-    }
-    header{
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    color: #5c4742;
-    background-color: #c4bbaf;
-    transition: .5s ease-in-out;
-    border-top: solid 2px;
-    border-bottom: solid 2px;
-    user-select: none;
-  }
-  header img{
-    margin-right: 1%;
-  }
-  .cup_color{
-    filter: invert(25%) sepia(5%) saturate(2549%) hue-rotate(324deg) brightness(97%) contrast(80%);
-    transition: .5s ease-in-out;
-  }
-  header:hover{
-    background-color: #5c4742;
-    color: #c4bbaf;
-  }
-  header:hover .cup_color{
-    filter: invert(83%) sepia(8%) saturate(407%) hue-rotate(355deg) brightness(94%) contrast(80%);
-  }
-  body{
-    color: #c4bbaf;
-    margin: 0;
-  }
-  ul, a{
-    all: unset;
-  }
-  li{
-    padding: 1%;
-    border: solid 2px;
-    display: inline-block;
-    cursor: pointer;
-  }
-  .active{
-    transition: .3s ease-in-out;
-  }
-  .active:hover{
-    background-color: #c4bbaf;
-    color: #5c4742;
-  }
-  p{
-    padding: 5%;
-  }
-  #vector a h3{
-    cursor: pointer;
-    transition:  .3s ease-in-out;
-    border-top: solid 2px;
-    border-bottom: solid 2px;
-    padding: 1.5%;
-  }
-  #vector a h3:hover{
-    background-color: #c4bbaf;
-    color:#5c4742;
-  }
-  hr{
-    border: #c4bbaf solid 1px;
-  }
-  footer{
-    margin-bottom: .5%;
-  }
-  </style>
 </head>
 <body style="background-color: #5c4742;">
   <header>
@@ -86,11 +15,11 @@
   </header>
   <main>
     <ul>
-      <li class="active"><a href="./me/index.html">HTML</a></li>
-      <li class="active"><a href="A4_MeCss/index.html">CSS</a></li>
-      <li class="active"><a href="A5_RasterGraphics/index.html">Raster Graphics</a></li>
-      <li class="active"><a href="A6_VectorGraphics/vector_graphics.svg">Vector Graphics</a></li>
-      <li class="active"><a href="https://www.figma.com/file/LA4v57EIlJcTeaXRIAcz1E/Judy-Zhang---MEDP285-Wireframe?type=design&node-id=1669-162202&mode=design&t=P2TLKCsVINotd9CO-0">Website Layout</a></li>
+      <a href="./me/index.html"><li class="active">HTML</li></a>
+      <a href="A4_MeCss/index.html"><li class="active">CSS</li></a>
+      <a href="A5_RasterGraphics/index.html"><li class="active">Raster Graphics</li></a>
+      <a href="A6_VectorGraphics/vector_graphics.svg"><li class="active">Vector Graphics</li></a>
+      <a href="https://www.figma.com/file/LA4v57EIlJcTeaXRIAcz1E/Judy-Zhang---MEDP285-Wireframe?type=design&node-id=1669-162202&mode=design&t=P2TLKCsVINotd9CO-0"><li class="active">Website Layout</li></a>
       <!-- <li class="active"><a href="A7_Midterm/index.html">Midterm</a></li> -->
       <li title="not avaliable">Responsive Design</li>
       <li title="not avaliable">JavaScript</li>

@@ -1,8 +1,8 @@
 *{
     font-family: "Montserrat", sans-serif;
     text-align: center;
-  }
-  header{
+}
+header{
     display: flex;
     justify-content: center;
     margin-top: 5%;
@@ -13,51 +13,78 @@
     border-top: solid 2px;
     border-bottom: solid 2px;
     user-select: none;
-  }
-  header img{
+}
+header img{
     margin-right: 1%;
-  }
-  .cup_color{
+}
+.cup_color{
     filter: invert(25%) sepia(5%) saturate(2549%) hue-rotate(324deg) brightness(97%) contrast(80%);
     transition: .5s ease-in-out;
-  }
-  header:hover{
+}
+header:hover{
     background-color: #5c4742;
     color: #c4bbaf;
-  }
-  header:hover .cup_color{
+}
+header:hover .cup_color{
     filter: invert(83%) sepia(8%) saturate(407%) hue-rotate(355deg) brightness(94%) contrast(80%);
-  }
-  body{
+}
+body{
     color: #c4bbaf;
     margin: 0;
-  }
-  ul, a{
+}
+ul, a{
     all: unset;
-  }
-  li{
+}
+li{
     padding: 1%;
     border: solid 2px;
     display: inline-block;
     cursor: pointer;
-  }
-  .active{
+}
+.active{
     transition: .3s ease-in-out;
-  }
-  .active:hover{
+    }
+.active:hover{
     background-color: #c4bbaf;
     color: #5c4742;
-  }
-  p{
+}
+p{
     padding: 5%;
-  }
-  hr{
+}
+#vector a h3{
+    cursor: pointer;
+    transition:  .3s ease-in-out;
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+    padding: 1.5%;
+}
+#vector a h3:hover{
+    background-color: #c4bbaf;
+    color:#5c4742;
+}
+hr{
     border: #c4bbaf solid 1px;
-  }
-  footer{
-    position:absolute;
-    bottom: 0;
-    left: 50%;
-    transform:translate(-50%,-50%);
-    width: 100%;
-  }
+}
+footer{
+    margin-bottom: .5%;
+}
+@media screen and (max-width:768px){
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    a li, li{
+        width: 90%;
+        border-left: none;
+        border-right: none;
+        padding: 4%;
+        margin-top: 2%;
+    }
+    p{
+        padding: 10%;
+        font-size: larger;
+    }
+    #vector a h3{
+        padding: 4%;
+    }
+}

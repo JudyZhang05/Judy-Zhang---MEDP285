@@ -1,6 +1,11 @@
 *{
     text-align: center;
     font-family: "Dosis", sans-serif;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+ul,a{
+    all:unset;
 }
 body{
     margin: 0;
@@ -47,7 +52,7 @@ nav img{
 #nav_left option{
     border-radius: 0px;
 }
-/* Navbar */
+/* Homepage */
 .description{
     color: #c4bbaf;
     height: 100vh;
@@ -59,14 +64,18 @@ nav img{
     border-top: solid 2px;
     border-bottom: solid 2px;
     grid-area: 2/1/2/6;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 #topic{
     grid-area: 2/1/3/6;
     margin-top: 2%;
     margin-bottom: 2%;
-    transition: .5s ease-in-out;
 }
-#topic:hover{
+#box:hover{
     background-color: #c4bbaf;
     color: #5c4742;
 }
@@ -74,18 +83,20 @@ nav img{
     grid-area: 4/2/4/5;
     font-size: 20px;
 }
-svg{
+.arrow{
     grid-area: 5/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#down{
-    transform: rotate(45deg);
+.arrow p{
+    font-size: 7vmin;
+    animation: descend 2s ease infinite;
 }
-.inline_link{
-    all:unset;
-    cursor: pointer;
-}
-.inline_link:hover{
-    text-decoration: underline;
+@keyframes descend{
+    from{transform:translateY(-5px);}
+    50%{transform:translateY(5px);}
+    to{transform: translateY(-5px);}
 }
 .content{
     margin-top: 5%;
@@ -93,9 +104,101 @@ svg{
     font-size: 20px;
     background-color: #aea4bf;
 }
-ul, .links a{
-    all:unset;
+/*general*/
+header{
+    color:#aea4bf;
 }
+.heading{
+    background-color:#E3E4DB;
+    padding: 2%;
+    margin: 0;
+    margin-bottom: 1%;
+}
+#main, #interests{
+    display: grid;    
+    grid-template-columns: 1fr 20% 60% 10% 1fr;
+    grid-template-rows: 10% 1fr 1fr 1fr  10% 1fr 1fr 1fr  10% 1fr 1fr 1fr;
+    margin-top: 5%;
+}
+#hobby{
+    margin-top: 5%;
+}
+.subheader{
+    background-color: #E3E4DB;
+    color:#aea4bf;
+    align-self: center;
+}
+p:not(#moreDetails, .description p){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.box{
+    border: solid 5px;
+    border-right: none;
+}
+footer p{
+    border-top: solid 5px;
+    padding-top: 2%;
+    margin: 0;
+    margin-top: 1%;
+}
+
+main img{
+    width: 100%;
+    height: auto;
+    border: solid 5px;
+    padding: 2%;
+}
+/* Interests */
+.block{ /*seperator*/
+    border: solid 2px;
+    align-self: center;
+    box-shadow: gray 0px 5px 5px;
+}
+#cat{
+    grid-area: 1/1/1/6;
+}
+#catImg{
+    grid-area: 1/2;
+}
+#catP, #catBox{
+    grid-area: 2/3/2/6;
+    /* display: flex;
+    justify-content: end;
+    align-items:center;
+    padding-right: 15%; */
+}
+#catB{grid-area:4/1/4/6}
+#book{
+    grid-area: 5/1/5/6;
+}
+#bookP, #bookBox{
+    grid-area: 6/3/6/6;
+}
+#bookImg{
+    grid-area: 5/2;
+}
+#bookB{grid-area:8/1/8/6}
+#art{
+    grid-area: 9/1/9/6;
+}
+#artP, #artBox{
+    grid-area: 10/3/10/6;
+}
+#artImg{
+    grid-area: 9/2;
+}
+#artB{grid-area:12/1/12/6}
+/* links */
+.inline_link{
+    cursor: pointer;
+}
+.inline_link:hover{
+    text-decoration: underline;
+} /*bottom nav links*/
 .links a:link{
     display: inline-block;
     cursor: pointer;
@@ -112,20 +215,14 @@ ul, .links a{
 .links a:visited{
     color:rgb(122, 119, 119);
 }
-header{
-    color:#aea4bf;
-}
-.heading{
-    background-color:#E3E4DB;
-    padding: 2%;
-    margin: 0;
-    margin-bottom: 1%;
-}
 .links{
+    grid-area: 13/1/13/6;
+
     padding: 1%;
     color:#aea4bf;
     background-color: #E3E4DB;
 }
+
 .wrap{
     padding: 3%;
     display: flex;
@@ -138,7 +235,4 @@ header{
 #who{
     color: #E3E4DB;  
     padding: 2%;
-}
-footer p{
-    margin: 0;
 }
