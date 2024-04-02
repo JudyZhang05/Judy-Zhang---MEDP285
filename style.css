@@ -43,10 +43,13 @@ li{
 }
 .active{
     transition: .3s ease-in-out;
-    }
+}
 .active:hover{
     background-color: #c4bbaf;
     color: #5c4742;
+}
+#skip{
+    padding: 1%;
 }
 p{
     padding: 5%;
@@ -80,6 +83,9 @@ footer{
         padding: 4%;
         margin-top: 2%;
     }
+    #skip{
+        padding: 0%;
+    }
     p{
         padding: 10%;
         font-size: larger;
@@ -87,4 +93,5 @@ footer{
     #vector a h3{
         padding: 4%;
     }
+
 }
