@@ -1,8 +1,8 @@
-const intro = document.getElementById("start");
-const wrap = document.getElementById("wrap");
+var start = document.getElementById("start");
+var wrap = document.getElementById("wrap");
 
 setTimeout(() => {
-    intro.style.display = "none";
+    start.style.display="none";
     wrap.style.overflowY = "auto";
 }, 6000);
 
