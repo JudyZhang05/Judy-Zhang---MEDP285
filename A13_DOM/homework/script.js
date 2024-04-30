@@ -63,7 +63,7 @@ vWol.addEventListener('click', moreDetail)
 if(dayofWeek == 1){
     backImg.style.fontFamily = "Zilla Slab, serif";
 }else if(dayofWeek == 2){
-    backImg.style.fontFamily = "Lora, serif";
+    backImg.style.fontFamily = "Lora, serif"; 
 }else if(dayofWeek == 3){
     backImg.style.fontFamily = "Jersey 25, sans-serif";
 }else if(dayofWeek == 4){
