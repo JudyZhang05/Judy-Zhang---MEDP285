@@ -1,0 +1,102 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6f131d22-7974-4793-9db3-2160376b5c72/df19bvd-c01244cc-f52a-4dfb-868f-a78a640ea444.jpg/v1/fill/w_1280,h_540,q_75,strp/destination3_by_wlop_df19bvd-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTQwIiwicGF0aCI6IlwvZlwvNmYxMzFkMjItNzk3NC00NzkzLTlkYjMtMjE2MDM3NmI1YzcyXC9kZjE5YnZkLWMwMTI0NGNjLWY1MmEtNGRmYi04NjhmLWE3OGE2NDBlYTQ0NC5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.HeGdhUgk0nnpkMyQHraTmB0n9CyOrOxRLSpPRXwiLPI");
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: "Lora", serif;
+}
+
+#start{
+    padding: 5%;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/originals/b8/d0/28/b8d02835418fbd1209566e9dd26264ed.gif");
+}
+
+#intro{
+    animation: beginning 5s forwards;
+}
+.artist{
+    animation: keep 5s forwards 5s;
+}
+
+.artist, #intro{
+    color: white;
+    opacity: 0%;
+}
+
+@keyframes beginning{
+    from{}
+    50%{opacity: 100%;}
+    to{}
+}
+@keyframes keep{
+    from{}
+    to{opacity: 100%;transform:translateY(-30px);}
+}
+
+#title{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main .artwork{
+    text-align: center;
+}
+.artwork{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.artwork img{
+    max-width: 100%;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.artwork img:hover{
+    transform: translateY(-10px);
+}
+
+#pre, .description, #conclude{
+    line-height: 1.6;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 4%;
+    background-color: rgba(218, 218, 218, 0.342);
+    transition: background-color .3s ease;
+}
+
+#pre:hover, .description:hover, #conclude:hover{
+    background-color: rgba(194, 194, 194, 0.473);
+}
+
+.description{
+    display: flex;
+}
+.skip{
+    padding: 3%;
+}
+
+footer{
+    text-align: center;
+}
+
+@media only screen and (max-width: 736px){
+    .artwork{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 20%;
+    }
+    .artwork img:not(#focus){
+        max-width: 50%;
+        margin-top: 2%;
+    }
+    #focus{
+        grid-area: 1/1/1/3;
+    }
+}
