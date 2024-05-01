@@ -60,18 +60,18 @@ bgC.addEventListener('click', updateBackground);
 vWol.addEventListener('click', moreDetail)
 
 //Different font for a different day of the week
-if(dayofWeek == 1){
+if(dayofWeek == 0){
     backImg.style.fontFamily = "Zilla Slab, serif";
-}else if(dayofWeek == 2){
+}else if(dayofWeek == 1){
     backImg.style.fontFamily = "Lora, serif"; 
-}else if(dayofWeek == 3){
+}else if(dayofWeek == 2){
     backImg.style.fontFamily = "Jersey 25, sans-serif";
-}else if(dayofWeek == 4){
+}else if(dayofWeek == 3){
     backImg.style.fontFamily = "IBM Plex Mono, monospace";
-}else if(dayofWeek == 5){
+}else if(dayofWeek == 4){
     backImg.style.fontFamily = "Crete Round, serif";
-}else if(dayofWeek == 6){
+}else if(dayofWeek == 5){
     backImg.style.fontFamily = "Chakra Petch, sans-serif";
-}else if(dayofWeek == 7){
+}else if(dayofWeek == 6){
     backImg.style.fontFamily = "Be Vietnam Pro, sans-serif";
 }
