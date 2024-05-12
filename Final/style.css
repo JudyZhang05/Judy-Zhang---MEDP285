@@ -4,6 +4,7 @@ body{
     background-image: url(./assets/sky.jpg);
     background-attachment: fixed;
     background-size: cover;
+    font-family: "Urbanist", sans-serif;
 }
 
 /*Navabar*/
@@ -21,6 +22,7 @@ a,ul,li,input{
     padding-left: 5%;
     padding-right: 6%;
     width: 100%;
+    font-weight: bolder;
 }
 
 #expand{
@@ -35,6 +37,7 @@ a,ul,li,input{
     margin-top: 10%;
     flex-direction: column;
     background-color: #A0A5B5;
+    font-weight: bolder;
 }
 
 ul{
@@ -198,12 +201,14 @@ input{
     padding-bottom: 2%;
     margin-bottom: 0px;
     color: #FEF8EC;
+    font-weight: bold;
 }
 #brand h3{
     padding: 4%;
     background-color: #FEF8EC;
     margin-bottom: 0px;
     color:#A0A5B5;
+    font-weight: bold;
 }
 
 .slide_show{
@@ -232,12 +237,11 @@ input{
 .subheader{
     color: #A0A5B5;
     font-size: 5rem;
-    /* text-decoration: underline; */
     margin-top: 2%;
     margin-bottom: 2%;
     border-bottom: solid 0.8rem;
     width: 100%;
-
+    font-weight: bolder;
 }
 #loc_sub{
     text-align: right;
@@ -349,6 +353,9 @@ input{
     align-items: flex-end;
     border-bottom: #A0A5B5 solid 5px;
 }
+.cate_t h1, .cate_t h2{
+    font-weight: bolder;
+}
 .cate_t h1, .cate_t h2, .cate_t small{
     margin-bottom: 0px;
     border: #A0A5B5 solid 5px;
@@ -392,7 +399,8 @@ input{
     display:flex;
     align-items: center;
     justify-content: space-between;  
-    font-size: 0.8rem;  
+    font-size: 100%;  
+    font-weight: bolder;
 }
 .prod_det p{
     width: 100%;
@@ -431,6 +439,7 @@ input{
     margin-bottom: 2%;
     padding: 1%;
     color: #FEF8EC;
+    font-weight: bolder;
 }
 video{
     width: 85%;
@@ -561,7 +570,7 @@ footer{
         height: auto;
     }
 }
-@media screen and (max-width:850px){
+@media screen and (max-width:870px){
     /* Shop */
     .product_col{
         flex-direction: column;
