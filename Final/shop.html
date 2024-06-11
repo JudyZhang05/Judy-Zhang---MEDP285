@@ -45,126 +45,253 @@
     </header>
         <main>
             <div id="shop"></div>
-            <div class="sub_sections">
-                <div class="cate">
-                    <div class="cate_t" id="new_cate">
-                        <h1>NEW!!</h1>
-                        <small>View More</small>
+                <div class="sub_sections">
+                    <h6 id="sort_by">Sort By:</h6>
+                    <div class="sort">
+                        <div class="s_col">
+                            <div class="form-check sort_opt">
+                                <input type="checkbox" class="form-check-input sort_check">
+                                <label class="form-check-label" for="exampleCheck1">Styles</label>
+                            </div>
+                            <div class="form-check sort_opt">
+                                <input type="checkbox" class="form-check-input sort_check">
+                                <label class="form-check-label" for="exampleCheck1">Artists</label>
+                            </div>
+                            <div class="form-check sort_opt">
+                                <input type="checkbox" class="form-check-input sort_check">
+                                <label class="form-check-label" for="exampleCheck1">Themes</label>
+                            </div>
+                        </div>
+                        <div class="s_col">
+                            <div class="form-check sort_opt">
+                                <input type="checkbox" class="form-check-input sort_check">
+                                <label class="form-check-label" for="exampleCheck1">Color</label>
+                            </div>
+                            <div class="form-check sort_opt">
+                                <input type="checkbox" class="form-check-input sort_check">
+                                <label class="form-check-label" for="exampleCheck1">Texture</label>
+                            </div>
+                            <div class="form-check sort_opt">
+                                <input type="checkbox" class="form-check-input sort_check">
+                                <label class="form-check-label" for="exampleCheck1">Monotone</label>
+                            </div>
+                        </div>
+                        <div class="s_col">
+                            <div class="form-check sort_opt">
+                                <input type="checkbox" class="form-check-input sort_check">
+                                <label class="form-check-label" for="exampleCheck1">Collectibles</label>
+                            </div>
+                            <div class="form-check sort_opt">
+                                <input type="checkbox" class="form-check-input sort_check">
+                                <label class="form-check-label" for="exampleCheck1">Scrapbooking</label>
+                            </div>
+                            <div class="form-check sort_opt">
+                                <input type="checkbox" class="form-check-input sort_check">
+                                <label class="form-check-label" for="exampleCheck1">Decoration</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product_row">
-                        <div class="product_col">
-                            <div class="product">
-                                <img draggable="false" srcset="./assets/animal_sticker.jpg 1440w, ./assets/animal_sticker-comp.jpg 480w" src="./assets/animal_sticker.jpg" width="100%" height="auto" alt="product">
-                                <div class="prod_det">
-                                    <p>Wild Animals</p>
-                                    <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                    <div class="cate">
+                        <div class="cate_t" id="new_cate">
+                            <h1>NEW!!</h1>
+                            <small>View More</small>
+                        </div>
+                        <div class="product_row">
+                            <div class="product_col">
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/animal_sticker.jpg 1440w, ./assets/animal_sticker-comp.jpg 480w" src="./assets/animal_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Wild Animals</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/sweets_sticker.jpg 1440w, ./assets/sweets_sticker-comp.jpg 480w" src="./assets/sweets_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Lovely Delicacies</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product">
-                                <img draggable="false" srcset="./assets/sweets_sticker.jpg 1440w, ./assets/sweets_sticker-comp.jpg 480w" src="./assets/sweets_sticker.jpg" width="100%" height="auto" alt="product">
-                                <div class="prod_det">
-                                    <p>Lovely Delicacies</p>
-                                    <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                            <div class="product_col">
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/floral_sticker.jpg 1440w, ./assets/floral_sticker-comp.jpg 480w" src="./assets/floral_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Fresh Florals</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/scented_sticker.jpg 1440w, ./assets/scented_sticker-comp.jpg 480w" src="./assets/scented_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Scented Aromas</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="product_col">
-                            <div class="product">
-                                <img draggable="false" srcset="./assets/floral_sticker.jpg 1440w, ./assets/floral_sticker-comp.jpg 480w" src="./assets/floral_sticker.jpg" width="100%" height="auto" alt="product">
-                                <div class="prod_det">
-                                    <p>Fresh Florals</p>
-                                    <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                    </div>
+                    <div class="cate">
+                        <div class="cate_t">
+                            <h2>POPULAR</h2>
+                            <small>View More</small>
+                        </div>
+                        <div class="product_row pop_cate">
+                            <div class="product_col pop_cate">
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/animal_sticker.jpg 1440w, ./assets/animal_sticker-comp.jpg 480w" src="./assets/animal_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Wild Animals</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/sweets_sticker.jpg 1440w, ./assets/sweets_sticker-comp.jpg 480w" src="./assets/sweets_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Lovely Delicacies</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product">
-                                <img draggable="false" srcset="./assets/scented_sticker.jpg 1440w, ./assets/scented_sticker-comp.jpg 480w" src="./assets/scented_sticker.jpg" width="100%" height="auto" alt="product">
-                                <div class="prod_det">
-                                    <p>Scented Aromas</p>
-                                    <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                            <div class="product_col">
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/floral_sticker.jpg 1440w, ./assets/floral_sticker-comp.jpg 480w" src="./assets/floral_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Fresh Florals</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/scented_sticker.jpg 1440w, ./assets/scented_sticker-comp.jpg 480w" src="./assets/scented_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Scented Aromas</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cate">
+                        <div class="cate_t">
+                            <h2>Tailored Styles</h2>
+                            <small>View More</small>
+                        </div>
+                        <div class="product_row">
+                            <div class="product_col">
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/animal_sticker.jpg 1440w, ./assets/animal_sticker-comp.jpg 480w" src="./assets/animal_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Wild Animals</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/sweets_sticker.jpg 1440w, ./assets/sweets_sticker-comp.jpg 480w" src="./assets/sweets_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Lovely Delicacies</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_col">
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/floral_sticker.jpg 1440w, ./assets/floral_sticker-comp.jpg 480w" src="./assets/floral_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Fresh Florals</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/scented_sticker.jpg 1440w, ./assets/scented_sticker-comp.jpg 480w" src="./assets/scented_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Scented Aromas</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cate">
+                        <div class="cate_t">
+                            <h2>Favorite Artists</h2>
+                            <small>View More</small>
+                        </div>
+                        <div class="product_row pop_cate">
+                            <div class="product_col">
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/animal_sticker.jpg 1440w, ./assets/animal_sticker-comp.jpg 480w" src="./assets/animal_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Wild Animals</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/sweets_sticker.jpg 1440w, ./assets/sweets_sticker-comp.jpg 480w" src="./assets/sweets_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Lovely Delicacies</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_col">
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/floral_sticker.jpg 1440w, ./assets/floral_sticker-comp.jpg 480w" src="./assets/floral_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Fresh Florals</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/scented_sticker.jpg 1440w, ./assets/scented_sticker-comp.jpg 480w" src="./assets/scented_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Scented Aromas</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cate">
+                        <div class="cate_t">
+                            <h2>Revisit</h2>
+                            <small>View More</small>
+                        </div>
+                        <div class="product_row">
+                            <div class="product_col">
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/animal_sticker.jpg 1440w, ./assets/animal_sticker-comp.jpg 480w" src="./assets/animal_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Wild Animals</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/sweets_sticker.jpg 1440w, ./assets/sweets_sticker-comp.jpg 480w" src="./assets/sweets_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Lovely Delicacies</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product_col">
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/floral_sticker.jpg 1440w, ./assets/floral_sticker-comp.jpg 480w" src="./assets/floral_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Fresh Florals</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <img draggable="false" srcset="./assets/scented_sticker.jpg 1440w, ./assets/scented_sticker-comp.jpg 480w" src="./assets/scented_sticker.jpg" width="100%" height="auto" alt="product">
+                                    <div class="prod_det">
+                                        <p>Scented Aromas</p>
+                                        <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="cate">
-                    <div class="cate_t">
-                        <h2>POPULAR</h2>
-                        <small>View More</small>
-                    </div>
-                    <div class="product_row pop_cate">
-                        <div class="product_col pop_cate">
-                            <div class="product">
-                                <img draggable="false" srcset="./assets/animal_sticker.jpg 1440w, ./assets/animal_sticker-comp.jpg 480w" src="./assets/animal_sticker.jpg" width="100%" height="auto" alt="product">
-                                <div class="prod_det">
-                                    <p>Wild Animals</p>
-                                    <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
-                                </div>
-                            </div>
-                            <div class="product">
-                                <img draggable="false" srcset="./assets/sweets_sticker.jpg 1440w, ./assets/sweets_sticker-comp.jpg 480w" src="./assets/sweets_sticker.jpg" width="100%" height="auto" alt="product">
-                                <div class="prod_det">
-                                    <p>Lovely Delicacies</p>
-                                    <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product_col">
-                            <div class="product">
-                                <img draggable="false" srcset="./assets/floral_sticker.jpg 1440w, ./assets/floral_sticker-comp.jpg 480w" src="./assets/floral_sticker.jpg" width="100%" height="auto" alt="product">
-                                <div class="prod_det">
-                                    <p>Fresh Florals</p>
-                                    <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
-                                </div>
-                            </div>
-                            <div class="product">
-                                <img draggable="false" srcset="./assets/scented_sticker.jpg 1440w, ./assets/scented_sticker-comp.jpg 480w" src="./assets/scented_sticker.jpg" width="100%" height="auto" alt="product">
-                                <div class="prod_det">
-                                    <p>Scented Aromas</p>
-                                    <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cate">
-                    <div class="cate_t">
-                        <h2>Tailored Styles</h2>
-                        <small>View More</small>
-                    </div>
-                    <div class="product_row">
-                        <div class="product_col">
-                            <div class="product">
-                                <img draggable="false" srcset="./assets/animal_sticker.jpg 1440w, ./assets/animal_sticker-comp.jpg 480w" src="./assets/animal_sticker.jpg" width="100%" height="auto" alt="product">
-                                <div class="prod_det">
-                                    <p>Wild Animals</p>
-                                    <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
-                                </div>
-                            </div>
-                            <div class="product">
-                                <img draggable="false" srcset="./assets/sweets_sticker.jpg 1440w, ./assets/sweets_sticker-comp.jpg 480w" src="./assets/sweets_sticker.jpg" width="100%" height="auto" alt="product">
-                                <div class="prod_det">
-                                    <p>Lovely Delicacies</p>
-                                    <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product_col">
-                            <div class="product">
-                                <img draggable="false" srcset="./assets/floral_sticker.jpg 1440w, ./assets/floral_sticker-comp.jpg 480w" src="./assets/floral_sticker.jpg" width="100%" height="auto" alt="product">
-                                <div class="prod_det">
-                                    <p>Fresh Florals</p>
-                                    <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
-                                </div>
-                            </div>
-                            <div class="product">
-                                <img draggable="false" srcset="./assets/scented_sticker.jpg 1440w, ./assets/scented_sticker-comp.jpg 480w" src="./assets/scented_sticker.jpg" width="100%" height="auto" alt="product">
-                                <div class="prod_det">
-                                    <p>Scented Aromas</p>
-                                    <img draggable="false" src="./assets/add.svg" width="30px" alt="add icon">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
             </div>
         </main>
         <footer>

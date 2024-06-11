@@ -282,6 +282,9 @@ input{
 #map_loc:hover img{
     transform: scale(1.1);
 }
+.locs{
+    overflow: auto;
+}
 #loc_name{
     display: flex;
     align-items: flex-end;
@@ -339,7 +342,34 @@ input{
 
 /* Shop */
 #shop{
-    padding-top: 20px;
+    padding-top: 50px;
+}
+#sort_by{
+    margin: 0px;
+    padding: 1%;
+    display: inline;
+    background-color: #E0D4CF;
+}
+.sort{
+    background:#E0D4CF;
+    display: flex;
+    width: 100%;
+    padding: 2%;
+}
+.s_col{
+    width: 50%;
+}
+.sort_opt{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 2%;
+}
+label{
+    margin-left: 1%;
+}
+.sort_check{
+    padding: .5%;
+    cursor: pointer;
 }
 #other_navbar{
     background-color: #A0A5B5;
@@ -519,7 +549,7 @@ footer{
     #loc_wrap{
         flex-direction: column;
     }
-    #spec_loc{
+    .spec_loc{
         margin-top: 5%;
     }
     #loc_sub{
@@ -584,7 +614,7 @@ footer{
         font-size: 100%;
     }
     #shop{
-        padding-top: 50px;
+        padding-top: 100px;
     }
     
     #socials{
